@@ -3,11 +3,11 @@ spark-tutorial
 
 ## New Spark Project
 Create the folder of the project, e.g. **spark-tutorial**,
-```
-mkdir spark-tutorial
-cd spark-tutorial
+``` console
+$ mkdir spark-tutorial
+$ cd spark-tutorial
 
-vim project/plugins.sbt
+$ vim project/plugins.sbt
 ```
 After creating our root project, we need to set up the build of the project by creating **build.sbt** in the root of the project with the following content:
 ```
