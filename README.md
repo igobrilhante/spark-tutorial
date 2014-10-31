@@ -1,4 +1,4 @@
-spark-tutorial
+Spark Tutorial
 ==============
 
 ## New Spark Project
@@ -40,4 +40,12 @@ $ git clone https://github.com/igobrilhante/spark-tutorial.git
 $ cd spark-tutorial
 $ sbt package
 ```
-**sbt package** will generate a jar of the project to be used on the Spark environment.
+**sbt package** will generate a jar of the project to be used on the Spark environment. 
+
+## Running
+To run our project, we need a file with some text, let's say **/tmp/example.txt**.
+``` console
+$ cd spark-tutorial
+$ ls -lh / > /tmp/example.txt
+$ spark-1.1.0/bin/spark-submit --class "br.ufc.arida.spark.SimpleApp" --master local[4] target/scala-2.10/spark-tutorial_2.10-0.1-SNAPSHOT.jar
+````
