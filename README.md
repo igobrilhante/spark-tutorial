@@ -34,3 +34,10 @@ addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.7.0-SNAPSHOT")
 Then, we can run the sbt task to turn the project into an Intellij project by ``` sbt gen-idea ``` in the root of the project.
 
 ## Cloning this repo
+If you want to use this project, you can get it by
+``` 
+git clone https://github.com/igobrilhante/spark-tutorial.git
+cd spark-tutorial
+sbt assembly
+```
+**sbt assembly** will generate a jar of the project to be used on the Spark environment.
