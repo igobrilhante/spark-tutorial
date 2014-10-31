@@ -10,7 +10,7 @@ $ cd spark-tutorial
 $ vim project/plugins.sbt
 ```
 After creating our root project, we need to set up the build of the project by creating **build.sbt** in the root of the project with the following content:
-```
+``` sbt
 scalaVersion := "2.10.4"
 
 libraryDependencies += "org.apache.spark" %% "spark-core" % "1.1.0"
@@ -26,7 +26,7 @@ Here we define the scala version and the libs the project depends on.
 
 ## Using Intellij
 If you use Intellij as your IDE, we can create its project through the sbt plugin **sbt-idea**. To use it, we need to add (create it if it does not exist) the following in **project/plugins.sbt**
-```
+``` sbt
 resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
 addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.7.0-SNAPSHOT")
@@ -35,9 +35,9 @@ Then, we can run the sbt task to turn the project into an Intellij project by ``
 
 ## Cloning this repo
 If you want to use this project, you can get it by
-``` 
-git clone https://github.com/igobrilhante/spark-tutorial.git
-cd spark-tutorial
-sbt assembly
+``` console
+$ git clone https://github.com/igobrilhante/spark-tutorial.git
+$ cd spark-tutorial
+$ sbt package
 ```
-**sbt assembly** will generate a jar of the project to be used on the Spark environment.
+**sbt package** will generate a jar of the project to be used on the Spark environment.
