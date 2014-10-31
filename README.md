@@ -25,7 +25,7 @@ Here we define the scala version and the libs the project depends on.
 
 
 ## Using Intellij
-If you use Intellij as your IDE, we can create its project through the sbt plugin **sbt-idea**. To use it, we need to add (create if it does not exist) the following in **project/plugins.sbt**
+If you use Intellij as your IDE, we can create its project through the sbt plugin **sbt-idea**. To use it, we need to add (create it if it does not exist) the following in **project/plugins.sbt**
 ```
 resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
